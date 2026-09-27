@@ -452,32 +452,3 @@ h2 { margin: 0; font-size: clamp(3rem, 5vw, 5.3rem); line-height: .93; }
   .area-cta { gap: 16px; }
   .hero-badges { gap: 8px 10px; margin-top: 28px; }
 }
-
-/* AMP skin: high-contrast charcoal, electric coral, and lime energy. */
-:root {
-  --color-primary: #111217;
-  --color-primary-soft: #20222a;
-  --color-accent: #e4573d;
-  --color-accent-light: #ff755d;
-  --color-highlight: #d6ef57;
-  --color-highlight-hover: #e4fb77;
-  --color-bg: #f3f1ec;
-  --color-bg-alt: #e4e3df;
-  --color-bg-muted: #d3d3cd;
-  --color-white: #fffefa;
-  --color-text-muted: #5e5d5b;
-  --color-border: rgba(17,18,23,.18);
-  --color-border-on-dark: rgba(243,241,236,.22);
-  --font-display: "DM Serif Display", Georgia, serif;
-  --font-body: "DM Sans", system-ui, sans-serif;
-}
-.hero-photo { position: relative; min-height: 520px; overflow: hidden; background: #262933; }
-.hero-photo img { width: 100%; height: 100%; min-height: 520px; object-fit: cover; filter: saturate(.85) contrast(1.05); }
-.hero-photo::after { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(17,18,23,.05), rgba(17,18,23,.72)); content: ""; }
-.photo-stamp { position: absolute; z-index: 1; right: 8%; bottom: 8%; color: var(--color-highlight); font-size: 3.1rem; font-weight: 700; letter-spacing: .04em; line-height: .8; text-align: right; text-transform: uppercase; }
-.photo-stamp span { display: block; margin-top: 14px; color: rgba(243,241,236,.8); font-size: .65rem; letter-spacing: .15em; line-height: 1; }
-.product-art { background-size: cover; background-position: center; }
-.product-art::after { position: absolute; inset: 0; background: linear-gradient(140deg, transparent 40%, rgba(17,18,23,.5)); content: ""; }
-.product-art img { width: 100%; height: 100%; object-fit: cover; }
-@media (max-width: 720px) { .hero-photo, .hero-photo img { min-height: 380px; } .photo-stamp { font-size: 2.35rem; } }
-.demo-banner[hidden] { display: none; }

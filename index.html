@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#111217" />
+  <meta name="theme-color" content="#1e2b25" />
 
   <!--
     ============================================================
@@ -11,26 +11,26 @@
     Replace every value below (title, description, canonical,
     Open Graph, Twitter) with the client's real, verified info
     before launch. Never ship a live client site with this
-    placeholder domain or a fictional business name.
-    The default content has been adapted from the Forge foundation for AMP Fitness.
+    template's placeholder domain or the demo business name.
+    The default content is a DEMO HVAC skin — see config.js.
     ============================================================
   -->
-  <title>AMP Fitness — HIIT &amp; Strength Coaching in Pittsburgh</title>
-  <meta name="description" content="AMP Fitness is a boutique HIIT and strength gym in Pittsburgh with expert-led 60-minute classes for every fitness level. Train together. Give back together." />
+  <title>Charter Oak Heating &amp; Cooling — HVAC in Greater Hartford, CT</title>
+  <meta name="description" content="Charter Oak Heating & Cooling — local HVAC repair, installation and maintenance across Greater Hartford, CT. Free estimates, upfront pricing, 24/7 emergency service. (Demo template.)" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://www.ampfitnesspgh.com/" />
+  <link rel="canonical" href="https://www.your-client-domain.com/" />
 
   <meta property="og:type" content="website" />
-  <meta property="og:site_name" content="AMP Fitness" />
-  <meta property="og:title" content="AMP Fitness — HIIT &amp; Strength Coaching in Pittsburgh" />
-  <meta property="og:description" content="Boutique HIIT and strength coaching in Pittsburgh. Expert-led 60-minute classes built for every fitness level." />
-  <meta property="og:url" content="https://www.ampfitnesspgh.com/" />
+  <meta property="og:site_name" content="Charter Oak Heating & Cooling" />
+  <meta property="og:title" content="Charter Oak Heating & Cooling — HVAC in Greater Hartford, CT" />
+  <meta property="og:description" content="Local HVAC repair, installation and maintenance across Greater Hartford, CT. Free estimates and upfront pricing." />
+  <meta property="og:url" content="https://www.your-client-domain.com/" />
   <!-- Add a 1200x630 image at /assets/img/social/og-image.jpg, then uncomment: -->
   <!-- <meta property="og:image" content="https://www.your-client-domain.com/assets/img/social/og-image.jpg" /> -->
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="AMP Fitness — HIIT &amp; Strength Coaching in Pittsburgh" />
-  <meta name="twitter:description" content="Boutique HIIT and strength coaching in Pittsburgh for every fitness level." />
+  <meta name="twitter:title" content="Charter Oak Heating & Cooling — HVAC in Greater Hartford, CT" />
+  <meta name="twitter:description" content="Local HVAC repair, installation and maintenance across Greater Hartford, CT." />
 
   <link rel="icon" type="image/svg+xml" href="/assets/img/brand/favicon.svg" />
 
@@ -42,56 +42,70 @@
 <body>
   <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- Demo banner remains hidden for verified public AMP content. -->
+  <!-- Demo banner: revealed by main.js only when BUSINESS.demo === true.
+       A real, verified client sets demo:false in config.js and this stays hidden. -->
   <div class="demo-banner" id="demoBanner" role="note" hidden></div>
 
   <!-- ============================== HEADER ============================== -->
   <header class="site-header" id="top">
     <div class="wrap header-inner">
-      <a class="brand" href="#top" aria-label="AMP Fitness home">
+      <a class="brand" href="#top" aria-label="Charter Oak Heating & Cooling home">
         <span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span>
-        <span class="brand-name">AMP <em>Fitness Pittsburgh</em></span>
+        <span class="brand-name">Charter Oak <em>Heating &amp; Cooling</em></span>
       </a>
 
       <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav" aria-label="Open navigation">
         <span></span><span></span>
       </button>
 
-      <!-- Keep navigation focused on the AMP customer journey. -->
+      <!-- Nav labels + anchors — keep to 4-5 items plus the estimate CTA -->
       <nav class="site-nav" id="nav" aria-label="Primary navigation">
-        <a href="#services">Classes</a>
-        <a href="#why">The AMP difference</a>
-        <a href="#area">Find your class</a>
-        <a href="#projects">The gym</a>
-        <a class="nav-cta" data-cta="primary" href="#estimate"><span class="cta-label">Book Your First Class</span> <span aria-hidden="true">↗</span></a>
+        <a href="#services">Services</a>
+        <a href="#why">Why us</a>
+        <a href="#area">Service area</a>
+        <a href="#projects">Projects</a>
+        <a class="nav-cta" data-cta="primary" href="#estimate"><span class="cta-label">Request a Free Estimate</span> <span aria-hidden="true">↗</span></a>
       </nav>
     </div>
   </header>
 
   <main id="main-content">
     <!-- ============================== HERO ============================== -->
-    <section class="hero section-dark" aria-labelledby="heroTitle">
+    <section class="hero section-dark" aria-labelledby="hero-title">
       <div class="wrap hero-grid">
         <div class="hero-copy reveal">
           <p class="eyebrow" id="heroEyebrow"><span class="eyebrow-dot"></span></p>
-          <h1 id="heroTitle" class="hero-h1">Show up. <em>Push hard.</em></h1>
+          <h1 id="hero-title" class="hero-h1">Comfortable home, <em>honest price.</em></h1>
           <p class="hero-lede" id="heroLede">Fast, clean, code-correct heating and cooling from a local crew that shows up on time.</p>
-          <p class="hero-emergency" id="heroEmergency"><span aria-hidden="true">⚡</span> 3 classes for $30 · New members only</p>
+          <p class="hero-emergency" id="heroEmergency"><span aria-hidden="true">⚡</span> 24/7 emergency service available</p>
           <div class="hero-actions">
-            <a class="button button-light" data-cta="primary" href="#estimate"><span class="cta-label">Book Your First Class</span> <span aria-hidden="true">↗</span></a>
+            <a class="button button-light" data-cta="primary" href="#estimate"><span class="cta-label">Request a Free Estimate</span> <span aria-hidden="true">↗</span></a>
             <a class="button button-ghost-light" data-cta="secondary" href="tel:+18605550142"><span class="phone-glyph" aria-hidden="true">✆</span> <span class="cta-label">Call Now</span></a>
           </div>
           <ul class="hero-badges" id="heroBadges" aria-label="What we offer">
-            <li>New member offer</li>
-            <li>All levels welcome</li>
-            <li>60 min coached classes</li>
+            <li>Free estimates</li>
+            <li>Licensed &amp; insured</li>
+            <li>Upfront pricing</li>
           </ul>
         </div>
 
-        <div class="hero-photo reveal reveal-delay-1"><img src="/assets/img/hero/amp-gym-floor.jpg" alt="AMP Fitness training floor in McKees Rocks" /><div class="photo-stamp">AMP<br /><span>Show up · push hard</span></div></div>
+        <!-- Decorative CSS illustration — no images, no stock photos. Purely
+             abstract, so it works for any trade and stays sharp at any size.
+             Replace with real project photography once client assets exist. -->
+        <div class="hero-art reveal reveal-delay-1" aria-hidden="true">
+          <div class="art-sun"></div>
+          <div class="art-grid"></div>
+          <div class="art-shelf"></div>
+          <div class="art-block art-block-tall"></div>
+          <div class="art-block art-block-small"></div>
+          <div class="art-disc"></div>
+          <div class="art-blob"></div>
+          <div class="art-label"><span>On the job</span><strong>CT</strong></div>
+          <div class="art-note"><span class="note-line"></span><span>Locally owned<br />& operated</span></div>
+        </div>
       </div>
       <div class="hero-ticker" aria-hidden="true">
-        <div class="ticker-track"><span>HIIT</span><i>✳</i><span>MAX</span><i>✳</i><span>Round Robin</span><i>✳</i><span>AMRAP</span><i>✳</i><span>HIIT</span><i>✳</i><span>MAX</span><i>✳</i><span>Round Robin</span><i>✳</i><span>AMRAP</span><i>✳</i></div>
+        <div class="ticker-track"><span>Repairs</span><i>✳</i><span>Installations</span><i>✳</i><span>Maintenance</span><i>✳</i><span>Emergency service</span><i>✳</i><span>Repairs</span><i>✳</i><span>Installations</span><i>✳</i><span>Maintenance</span><i>✳</i><span>Emergency service</span><i>✳</i></div>
       </div>
     </section>
 
@@ -102,16 +116,16 @@
       <div class="wrap trust-grid" id="trustGrid"></div>
     </section>
 
-    <!-- ==================== FIND YOUR CLASS ====================
+    <!-- ==================== SERVICES ====================
          Rendered from SERVICES in config.js (supports 3–6). -->
     <section class="services section-light" id="services" aria-labelledby="services-title">
       <div class="wrap">
         <div class="section-heading reveal">
           <div>
-            <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Find your class</p>
-            <h2 id="services-title">Find your<br /><em>class.</em></h2>
+            <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> What we do</p>
+            <h2 id="services-title">Heating &amp; cooling,<br /><em>handled.</em></h2>
           </div>
-          <p class="section-intro">Every class is coached from start to finish. Choose your format, book your spot, and show up ready.</p>
+          <p class="section-intro">From a noisy AC to a full system replacement, here's how we help — with a written estimate before any work begins.</p>
         </div>
         <div class="service-list" id="serviceList"></div>
       </div>
@@ -122,67 +136,69 @@
     <section class="whyus section-paper" id="why" aria-labelledby="why-title">
       <div class="wrap intro-grid">
         <div class="intro-aside reveal">
-          <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> The AMP difference</p>
+          <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Why us</p>
           <p class="aside-number">01<span>/04</span></p>
-          <p class="aside-caption">Fitness is better with community — and community is stronger when it gives back.</p>
+          <p class="aside-caption">The best contractors answer the phone, quote straight, and leave the job right. That's the whole idea.</p>
         </div>
         <div class="intro-copy reveal reveal-delay-1">
-          <h2 id="why-title">Train together.<br /><em>Give back together.</em></h2>
-          <p class="why-lead" id="whyLead">AMP was built on a simple belief: fitness is better with community, and community is stronger when it gives back.</p>
+          <h2 id="why-title">Local, and<br /><em>accountable.</em></h2>
+          <p class="why-lead" id="whyLead">We started to give Greater Hartford an HVAC company that treats a home like its own.</p>
           <div class="why-grid" id="whyGrid"></div>
         </div>
       </div>
     </section>
 
-    <!-- ==================== FIND YOUR PROGRAM ====================
+    <!-- ==================== SERVICE AREA ====================
          Statement, region and city chips rendered from SERVICE_AREA in
          config.js. Use only towns the client actually serves. -->
     <section class="service-area section-light" id="area" aria-labelledby="area-title">
       <div class="wrap">
         <div class="section-heading reveal">
           <div>
-            <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Find your program</p>
-            <h2 id="area-title">Start where<br /><em>you are.</em></h2>
+            <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Where we work</p>
+            <h2 id="area-title">Proudly serving<br /><em>Greater Hartford.</em></h2>
           </div>
-          <p class="section-intro" id="areaStatement">Your Pittsburgh-area home base for coached HIIT, strength, and community.</p>
+          <p class="section-intro" id="areaStatement">Family-run HVAC service across Greater Hartford.</p>
         </div>
-        <p class="area-region"><span aria-hidden="true">◎</span> <span id="areaRegion">McKees Rocks, Pennsylvania</span></p>
+        <p class="area-region"><span aria-hidden="true">◎</span> <span id="areaRegion">Hartford County, Connecticut</span></p>
         <ul class="area-chips" id="areaChips" aria-label="Towns we serve"></ul>
         <div class="area-cta">
-          <a class="button button-dark" data-cta="primary" href="#estimate"><span class="cta-label">Book Your First Class</span> <span aria-hidden="true">↗</span></a>
+          <a class="button button-dark" data-cta="primary" href="#estimate"><span class="cta-label">Request a Free Estimate</span> <span aria-hidden="true">↗</span></a>
           <a class="text-link text-link-dark" data-cta="secondary" data-business="phone-link" href="tel:+18605550142"><span class="phone-glyph" aria-hidden="true">✆</span> <span class="cta-label">Call Now</span></a>
         </div>
       </div>
     </section>
 
-    <!-- ==================== THE GYM / AMP EXPERIENCE ====================
+    <!-- ==================== PROJECTS / PROOF ====================
          Rendered from PROJECTS in config.js. Until real jobs + photos
-         exist, each card uses verified AMP imagery and public-site messaging.
+         exist, each card is flagged "Sample project" (placeholder:true).
          Never present invented work as real. -->
     <section class="collection section-paper" id="projects" aria-labelledby="projects-title">
       <div class="wrap">
         <div class="section-heading collection-heading reveal">
           <div>
-            <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> The gym</p>
-            <h2 id="projects-title">Built for<br /><em>showing up.</em></h2>
+            <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Recent work</p>
+            <h2 id="projects-title">Proof, not<br /><em>promises.</em></h2>
           </div>
-          <a class="text-link text-link-dark desktop-only" data-cta="primary" href="#estimate">Book a class <span aria-hidden="true">↗</span></a>
+          <a class="text-link text-link-dark desktop-only" data-cta="primary" href="#estimate">Start your project <span aria-hidden="true">↗</span></a>
         </div>
         <div class="collection-grid" id="projectGrid"></div>
-        <div class="mobile-only collection-link-mobile"><a class="text-link text-link-dark" data-cta="primary" href="#estimate">Book a class <span aria-hidden="true">↗</span></a></div>
+        <div class="mobile-only collection-link-mobile"><a class="text-link text-link-dark" data-cta="primary" href="#estimate">Start your project <span aria-hidden="true">↗</span></a></div>
       </div>
     </section>
 
-    <!-- ==================== COMMUNITY / REVIEWS ====================
-         Rendered from TESTIMONIALS in config.js using public AMP Fitness review excerpts. -->
+    <!-- ==================== TESTIMONIALS ====================
+         Rendered from TESTIMONIALS in config.js. While BUSINESS.demo is
+         true each card shows a "Demo review" tag. Replace with real,
+         permissioned reviews before launch — never fabricate. -->
     <section class="testimonials section-light" id="reviews" aria-labelledby="testimonials-title">
       <div class="wrap">
         <div class="section-heading reveal">
           <div>
-            <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> The community</p>
-            <h2 id="testimonials-title">What members<br /><em>say.</em></h2>
+            <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Kind words</p>
+            <h2 id="testimonials-title">What neighbors<br /><em>say.</em></h2>
           </div>
-          <p class="section-intro">Real words from people who keep showing up at AMP.</p>
+          <p class="section-intro">Sample reviews shown for layout — replace with real customer feedback before launch.</p>
         </div>
         <div class="testimonial-grid" id="testimonialGrid"></div>
       </div>
@@ -192,12 +208,12 @@
     <section class="visit section-dark" id="visit" aria-labelledby="visit-title">
       <div class="wrap visit-grid">
         <div class="visit-copy reveal">
-          <p class="eyebrow"><span class="eyebrow-dot"></span> Visit AMP</p>
-          <h2 id="visit-title">Your next<br /><em>best class.</em></h2>
-          <p>Find us at 5992 Steubenville Pike in McKees Rocks. Questions about classes, pricing, or your first visit? We're here.</p>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Reach us</p>
+          <h2 id="visit-title">Talk to a real<br /><em>local team.</em></h2>
+          <p>Call for fast dispatch or directions — and after hours, our emergency line is always on.</p>
           <div class="visit-details">
             <div class="detail-item"><span class="detail-icon" aria-hidden="true">✆</span><div><strong>Call us</strong><a data-business="phone-link" data-fill="text" href="tel:+18605550142">(860) 555-0142</a></div></div>
-            <div class="detail-item"><span class="detail-icon" aria-hidden="true">◷</span><div><strong>Visit us</strong><address data-business="address-text">5992 Steubenville Pike, McKees Rocks, PA 15136</address></div></div>
+            <div class="detail-item"><span class="detail-icon" aria-hidden="true">◷</span><div><strong>Service area</strong><address data-business="address-text">West Hartford, CT 06110</address></div></div>
           </div>
           <div class="social-row">
             <a data-social="instagram" href="#" aria-label="Instagram">Instagram</a>
@@ -205,24 +221,24 @@
           </div>
         </div>
         <div class="hours-card reveal reveal-delay-1">
-          <div class="hours-card-head"><p class="eyebrow">Gym hours</p><span class="open-pill"><span class="status-dot"></span><span id="openStatus">Check today's hours</span></span></div>
+          <div class="hours-card-head"><p class="eyebrow">Office hours</p><span class="open-pill"><span class="status-dot"></span><span id="openStatus">Check today's hours</span></span></div>
           <ul class="hours" id="hoursList" aria-label="Weekly hours"></ul>
-          <p class="hours-footnote">Classes fill up fast — especially mornings and Saturdays.<br /><a data-cta="primary" href="#estimate">Book through MindBody <span aria-hidden="true">↗</span></a></p>
+          <p class="hours-footnote">No heat or no cooling after hours?<br /><a data-business="phone-link" href="tel:+18605550142">Call our emergency line <span aria-hidden="true">↗</span></a></p>
         </div>
       </div>
     </section>
 
-    <!-- ==================== CONTACT / QUESTIONS ====================
+    <!-- ==================== ESTIMATE FORM ====================
          Front-end only: submitting opens the visitor's email app
          pre-filled to BUSINESS.email. No backend, nothing stored.
          The select options come from FORM in config.js. -->
     <section class="contact section-paper" id="estimate" aria-labelledby="estimate-title">
       <div class="wrap contact-grid">
         <div class="contact-copy reveal">
-          <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Questions?</p>
-          <h2 id="estimate-title">Let's get you<br /><em>started.</em></h2>
-          <p>Not sure which class is right for you? Send us a note and the AMP team will help you find a starting point.</p>
-          <p class="contact-small">Prefer to talk? Call <a data-business="phone-link" data-fill="text" href="tel:+18605550142">(860) 555-0142</a> or email <a data-business="email-link" data-fill="text" href="mailto:info@ampfitnesspgh.com">info@ampfitnesspgh.com</a>.</p>
+          <p class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Free estimate</p>
+          <h2 id="estimate-title">Request your<br /><em>free estimate.</em></h2>
+          <p>Tell us what's going on and we'll get back to you — usually the same business day — to schedule a visit or a quote.</p>
+          <p class="contact-small">Prefer to talk? Call <a data-business="phone-link" data-fill="text" href="tel:+18605550142">(860) 555-0142</a> or email <a data-business="email-link" data-fill="text" href="mailto:estimates@charteroakhvac.example">estimates@charteroakhvac.example</a>.</p>
         </div>
         <form class="contact-form reveal reveal-delay-1" id="contactForm">
           <div class="form-row">
@@ -234,12 +250,12 @@
             <div class="field"><label for="service">Service needed</label><select id="service" name="service" required><option value="" selected disabled>Select a service…</option></select></div>
           </div>
           <div class="form-row">
-            <div class="field"><label for="location">Property / location <span>(town or ZIP)</span></label><input id="location" name="location" autocomplete="address-level2" placeholder="McKees Rocks, PA" /></div>
+            <div class="field"><label for="location">Property / location <span>(town or ZIP)</span></label><input id="location" name="location" autocomplete="address-level2" placeholder="West Hartford, CT" /></div>
             <div class="field"><label for="timing">Preferred timing</label><select id="timing" name="timing"><option value="" selected disabled>Select timing…</option></select></div>
           </div>
           <div class="field"><label for="message">Project details</label><textarea id="message" name="message" rows="4" required placeholder="Tell us what's happening — e.g. 'AC stopped cooling last night'…"></textarea></div>
-          <div class="form-submit"><button class="button button-dark" type="submit"><span class="cta-label">Send your question</span> <span aria-hidden="true">↗</span></button><p class="form-status" id="formStatus" role="status" aria-live="polite"></p></div>
-          <p class="form-note">Submitting opens your email app with the details filled in — nothing is stored on this site. We reply from <span data-business="email-link" data-fill="text">info@ampfitnesspgh.com</span>.</p>
+          <div class="form-submit"><button class="button button-dark" type="submit"><span class="cta-label">Send estimate request</span> <span aria-hidden="true">↗</span></button><p class="form-status" id="formStatus" role="status" aria-live="polite"></p></div>
+          <p class="form-note">Submitting opens your email app with the details filled in — nothing is stored on this site. We reply from <span data-business="email-link" data-fill="text">estimates@charteroakhvac.example</span>.</p>
         </form>
       </div>
     </section>
@@ -248,10 +264,10 @@
     <section class="final-cta section-dark" aria-labelledby="final-cta-title">
       <div class="wrap">
         <p class="eyebrow"><span class="eyebrow-dot"></span> Ready when you are</p>
-        <h2 id="final-cta-title">Show up. Push hard.<br /><em>Give back.</em></h2>
-        <p>3 classes for $30 to use within 1 week. New members only. No contract required.</p>
+        <h2 id="final-cta-title">Let's get your home<br /><em>comfortable again.</em></h2>
+        <p>Free estimates, upfront pricing, and a local crew that treats your home like its own.</p>
         <div class="final-cta-actions">
-          <a class="button button-light" data-cta="primary" href="#estimate"><span class="cta-label">Book Your First Class</span> <span aria-hidden="true">↗</span></a>
+          <a class="button button-light" data-cta="primary" href="#estimate"><span class="cta-label">Request a Free Estimate</span> <span aria-hidden="true">↗</span></a>
           <a class="button button-ghost-light" data-cta="secondary" href="tel:+18605550142"><span class="phone-glyph" aria-hidden="true">✆</span> <span class="cta-label">Call Now</span></a>
         </div>
       </div>
@@ -262,23 +278,23 @@
   <footer class="site-footer">
     <div class="wrap footer-grid">
       <div>
-        <a class="brand brand-footer" href="#top" aria-label="AMP Fitness home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">AMP <em>Fitness Pittsburgh</em></span></a>
-        <p class="footer-tagline">Train together.<br />Give back together.</p>
+        <a class="brand brand-footer" href="#top" aria-label="Charter Oak Heating & Cooling home"><span class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></span><span class="brand-name">Charter Oak <em>Heating &amp; Cooling</em></span></a>
+        <p class="footer-tagline">Local HVAC.<br />Greater Hartford, CT.</p>
       </div>
       <div class="footer-col">
         <p class="footer-heading">Explore</p>
-        <a href="#services">Classes</a>
-        <a href="#why">The AMP difference</a>
-        <a href="#area">Find your class</a>
-        <a href="#projects">The gym</a>
+        <a href="#services">Services</a>
+        <a href="#why">Why us</a>
+        <a href="#area">Service area</a>
+        <a href="#projects">Projects</a>
         <a href="#reviews">Reviews</a>
       </div>
       <div class="footer-col">
         <p class="footer-heading">Contact</p>
         <a data-business="phone-link" data-fill="text" href="tel:+18605550142">(860) 555-0142</a>
-        <a data-business="email-link" data-fill="text" href="mailto:info@ampfitnesspgh.com">info@ampfitnesspgh.com</a>
-        <address data-business="address-text">5992 Steubenville Pike, McKees Rocks, PA 15136</address>
-        <a data-cta="primary" href="#estimate">Book your first class <span aria-hidden="true">↗</span></a>
+        <a data-business="email-link" data-fill="text" href="mailto:estimates@charteroakhvac.example">estimates@charteroakhvac.example</a>
+        <address data-business="address-text">West Hartford, CT 06110</address>
+        <a href="#estimate">Free estimate <span aria-hidden="true">↗</span></a>
       </div>
       <div class="footer-col">
         <p class="footer-heading">Follow</p>
@@ -286,7 +302,7 @@
         <a data-social="facebook" href="#">Facebook</a>
       </div>
     </div>
-    <div class="wrap footer-bottom"><span>© <span id="year">2026</span> <span data-business="name">AMP Fitness</span></span><span>Built on the Forge foundation</span></div>
+    <div class="wrap footer-bottom"><span>© <span id="year">2026</span> <span data-business="name">Charter Oak Heating &amp; Cooling</span></span><span>Site by Forge-CT</span></div>
   </footer>
 
   <script src="/assets/js/config.js" defer></script>

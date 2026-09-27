@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!-- Replace the placeholder domain with the client's real production domain before launch. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.ampfitnesspgh.com/</loc>
+    <loc>https://www.your-client-domain.com/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
